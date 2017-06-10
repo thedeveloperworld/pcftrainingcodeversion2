@@ -15,13 +15,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class amisoftWelcomeController {
 
     @Value(value = "${amisoft.service.welcome}")
-    String databaseUrl;
+    String message;
 
     @RequestMapping(value = "/welcome", method= RequestMethod.GET)
     public ResponseEntity<String> fetchDatabaseUrl(){
 
         ResponseEntity<String> responseStatus = null;
         return responseStatus = ResponseEntity.status(HttpStatus.OK).body
-                ("Welcome message :" + databaseUrl);
+                ("Welcome message :" + message);
     }
 }

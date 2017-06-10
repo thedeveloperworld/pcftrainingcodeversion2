@@ -4,6 +4,6 @@ spring:
     active: qa
   cloud:
     config:
-      uri: http://localhost:9000
+      uri: http://localhost:9000  #Url of Configuration server
       username: amisoft
       password: amisoftpass
