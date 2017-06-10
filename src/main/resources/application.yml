@@ -1,0 +1,8 @@
+---
+spring:
+  application:
+    name: amisoft_service_welcome  # This should be the same name of property file in Git.
+server:
+  port: 9001
+
+
