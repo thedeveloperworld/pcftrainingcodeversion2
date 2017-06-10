@@ -18,7 +18,7 @@ public class amisoftWelcomeController {
     String message;
 
     @RequestMapping(value = "/welcome", method= RequestMethod.GET)
-    public ResponseEntity<String> fetchDatabaseUrl(){
+    public ResponseEntity<String> welcomeMessage(){
 
         ResponseEntity<String> responseStatus = null;
         return responseStatus = ResponseEntity.status(HttpStatus.OK).body
