@@ -1,8 +1,14 @@
 ---
 spring:
   application:
-    name: amisoft_service_welcome  # This should be the same name of property file in Git.
+    name: amisoft_service_welcome   # This should be the same name of property file in Git.
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
 server:
   port: 9001
-
+management:
+  security:
+    enabled: false
 
