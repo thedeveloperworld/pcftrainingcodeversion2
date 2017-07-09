@@ -4,7 +4,7 @@ spring:
     name: amisoft_service_welcome   # This should be the same name of property file in Git.
   cloud:
     consul:
-      host: localhost
+      host: ${consul.host}
       port: 8500
 server:
   port: 9001

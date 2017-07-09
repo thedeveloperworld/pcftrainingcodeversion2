@@ -4,6 +4,8 @@ spring:
     active: qa
   cloud:
     config:
-      uri: http://localhost:9000  #Url of Configuration server
+      discovery:
+        enabled: true
+        service-id: amisoft-config-server
       username: amisoft
       password: amisoftpass
