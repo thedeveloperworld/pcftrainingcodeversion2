@@ -6,6 +6,6 @@ spring:
     config:
       discovery:
         enabled: true
-        service-id: amisoft-config-server
+        service-id: amisoft_config_server
       username: amisoft
       password: amisoftpass
