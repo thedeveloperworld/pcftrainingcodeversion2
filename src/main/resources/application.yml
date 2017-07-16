@@ -11,4 +11,10 @@ server:
 management:
   security:
     enabled: false
+security:
+  oauth2:
+    resource:
+      user-info-uri: ${oauth.client.user.info.uri}
+  basic:
+    enabled: false
 
